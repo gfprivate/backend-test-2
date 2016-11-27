@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.webhooks_base_url = ENV["WEBHOOKS_BASE_URL"]
+
+  config.voicemail_message = "Please leave a message after the beep. Press any key when done."
 end

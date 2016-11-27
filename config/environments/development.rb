@@ -38,4 +38,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.webhooks_base_url = ENV["WEBHOOKS_BASE_URL"]
+
+  config.voicemail_message = "Please leave a message after the beep. Press any key when done."
 end
